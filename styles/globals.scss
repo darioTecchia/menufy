@@ -1,0 +1,74 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'ITC Avant Garde', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: large;
+  font-weight: lighter;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --red: #e53e30;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+svg {
+  height: 240px;
+  width: 100%;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+b {
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.container {
+  padding: 24px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.unblur {
+  animation: unblur .3s linear;
+}
+
+@keyframes unblur {
+  from {
+    filter: blur(20px);
+  }
+
+  to {
+    filter: blur(0);
+  }
+}

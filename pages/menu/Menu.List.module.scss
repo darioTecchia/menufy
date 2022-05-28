@@ -1,0 +1,11 @@
+.menu {
+  display: block;
+
+  &:hover {
+    color: var(--red);
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+}

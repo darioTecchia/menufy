@@ -1,0 +1,114 @@
+.header {
+  position: sticky;
+  padding: 24px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  background-color: unset !important;
+  text-transform: uppercase;
+  font-size: xx-large;
+  backdrop-filter: blur(1px);
+
+  >* {
+    width: 18%;
+    flex: 0 1 18%;
+    background-color: transparent;
+  }
+
+  svg {
+    height: 60px;
+  }
+}
+
+.menu {
+  text-align: left;
+}
+
+.menuButton {
+  cursor: pointer;
+  width: fit-content;
+}
+
+.menuOptions {
+  display: flex;
+  position: fixed !important;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 70px 0;
+  cursor: pointer;
+
+  a {
+    display: block;
+    transition: all .2s;
+    transition-timing-function: ease;
+    width: fit-content;
+  }
+
+  a.nuxt-link-active {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+
+  a:hover {
+    margin-left: 10px;
+  }
+
+  a.collections-button {
+    cursor: pointer;
+  }
+
+  .collections-submenu {
+    font-size: 35px;
+    letter-spacing: 5px;
+  }
+
+  .collections-submenu a {
+    margin-bottom: 10px;
+  }
+}
+
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media all and (max-width: 823px) {
+  .menu {}
+
+  .infoButton {}
+
+  .header {
+    >* {
+      width: 50%;
+      flex: 0 1 50%;
+    }
+  }
+}

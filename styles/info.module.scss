@@ -1,0 +1,32 @@
+.info {
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  >div {
+    width: 18%;
+    flex: 1 1 18%;
+  }
+}
+
+@media all and (max-aspect-ratio: 1/1) {
+  .info {
+    flex-direction: column;
+
+    >div {
+      width: 32%;
+      flex: 0 1 32%;
+    }
+  }
+
+  .infoBox {
+    width: fit-content !important;
+    padding: 20px;
+  }
+}
